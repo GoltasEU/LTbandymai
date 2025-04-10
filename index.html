@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Goltas – Išmanus Pakabukas</title>
+  <title>Goltas – Dovanok Džiaugsmą</title>
   <style>
     @keyframes pulse {
       0% { box-shadow: 0 0 0 0 rgba(30, 115, 190, 0.5); }
@@ -16,21 +16,43 @@
       font-family: sans-serif;
       background: #f9f9f9;
       text-align: center;
-      padding: 40px 20px;
+      padding: 0;
       color: #222;
+    }
+
+    .banner {
+      position: relative;
+      width: 100%;
+      max-height: 400px;
+      overflow: hidden;
+    }
+
+    .banner img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+
+    .banner-text {
+      position: absolute;
+      right: 30px;
+      bottom: 30px;
+      color: white;
+      font-size: 36px;
+      font-weight: bold;
+      text-shadow: 2px 2px 6px rgba(0,0,0,0.4);
     }
 
     .intro-box {
       background: linear-gradient(135deg, #e0f0ff, #f7faff);
-      padding: 30px;
+      padding: 30px 20px;
       border-radius: 20px;
       box-shadow: 0 4px 12px rgba(0,0,0,0.05);
-      margin-bottom: 40px;
+      margin: 40px 20px;
     }
 
-    h2 {
+    h3 {
       margin-bottom: 10px;
-      font-size: 28px;
     }
 
     .btn {
@@ -77,8 +99,13 @@
 </head>
 <body>
 
+  <div class="banner">
+    <img src="https://www.goltas.lt/wp-content/uploads/2025/02/Dovanok-dziaugsma-taupykles-vaikams-1400x700.jpg" alt="Dovanok džiaugsmą">
+    <div class="banner-text">DOVANOK DŽIAUGSMĄ</div>
+  </div>
+
   <div class="intro-box">
-    <h2>🎁 Padovanok jausmą – ne daiktą!</h2>
+    <h3>🎁 Padovanok jausmą – ne daiktą!</h3>
     <p>Ieškai dovanos, kuri nustebintų?<br>🎯 Spausk ir rask unikalią idėją.</p>
 
     <a class="btn" href="https://www.goltas.lt">🌐 Peržiūrėk dovanų idėjas www.goltas.lt</a>
